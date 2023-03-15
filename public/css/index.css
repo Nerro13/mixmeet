@@ -1,0 +1,62 @@
+/*css resets*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+input, textarea, label{
+  display: block;
+  margin-bottom: 50px;
+  width: 100%;
+  margin: 5px 0px;
+  padding: 6px;
+  font: inherit;
+}
+label{
+    text-align: left;
+
+}
+/*body*/
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+header img {
+  height: 100px;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+}
+header nav a:hover {
+  background-color: rgb(96, 104, 148);
+}
+form{
+    margin: 10px auto;
+    max-width: 450px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}/*home main */
+.home-main{
+    display: flex;
+    gap: 55px;
+    flex-direction: column;
+    padding: 0px 50px;
+    max-width: 600px;
+    margin: 0px auto;
+}
