@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./images/favicon" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <title>Sign up </title>
 </head>
 <body>
@@ -19,6 +19,9 @@
     </header>
     <main>
         <h1>Sign up </h1>
+        <%if(locals.error){%>
+            <p style="color: orangered"><%= errorMessage%></p>
+            <%}%>
         <form action="/sign-up" method="post">
             <label for="username">Username</label>
             <input type="text" name="username" id="username">
